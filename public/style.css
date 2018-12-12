@@ -1,0 +1,36 @@
+.pull-request-list {
+    margin: 5rem !important;
+}
+
+.content {
+    padding-top: 5rem;
+}
+
+.octocat {
+    margin-bottom: 2rem;
+}
+
+.search-header {
+    margin: 1rem;
+}
+
+.github-form {
+    padding: 1rem;
+}
+
+.form-button {
+    padding: .5rem;
+}
+
+.header {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.pull-request-cards {
+    margin: 1rem 0;
+}
+
+.card-element {
+    margin: .5rem;
+}
