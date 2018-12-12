@@ -14,8 +14,9 @@
 <body>
     <nav class="navbar navbar-light bg-light justify-content-between">
         <a href="/"><img src="../images/git_hub_logo_nav.png" width="80px" height="80px"></a>
-        <form action="/repository/search" method="POST" class="form-inline my-2 my-lg-0 github-form">
-            <input class="form-control mr-sm-2 " type="search" placeholder="New Search" aria-label="Search" name="q">
+        <form action="/repository/search" method="GET" class="form-inline my-2 my-lg-0 github-form">
+            <input class="form-control mr-sm-2 " type="search" placeholder="Enter a github repository url"
+                aria-label="Search" name="q">
             <button class="btn btn-info  my-2 my-sm-0 form-button" type="submit">Search <i class="fas fa-search"></i></button>
         </form>
     </nav>
