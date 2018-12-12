@@ -3,8 +3,9 @@ const router = express.Router();
 const axios = require('axios')
 
 
-router.post("/search", async (req, res) => {
-    const query = req.body.q;
+router.get("/search", async (req, res) => {
+    const query = req.query['q'];
+    console.log(query, "<---- this is query")
     // console.log(typeof query, '<---this is type of the users input')
     const querySplit = query.split('/')
     // console.log(querySplit, "<----- this is query split")
@@ -26,12 +27,12 @@ router.post("/search", async (req, res) => {
 });
 
 
-router.post('/show', async (req, res) => {
-    const query = req.body.q;
+router.get('/show', async (req, res) => {
+    const query = req.query['q'];
+
     axios.get(`${query}`)
         .then((response) => {
             githubResponse = response
-            console.log(githubResponse.data.head.repo.html_url, "<--- repo url ")
             res.render('show.ejs', {
                 pullRequests: githubResponse.data
             })
